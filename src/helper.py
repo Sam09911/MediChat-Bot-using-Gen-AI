@@ -1,10 +1,6 @@
-import os
-os.environ["TRANSFORMERS_NO_TF"] = "1"
-
 from langchain.document_loaders import PyPDFLoader, DirectoryLoader
-from langchain_huggingface import HuggingFaceEmbeddings
-from langchain_text_splitters import RecursiveCharacterTextSplitter
-
+from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain.embeddings import HuggingFaceEmbeddings
 
 
 #Extract Data From the PDF File
